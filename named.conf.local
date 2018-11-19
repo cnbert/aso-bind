@@ -6,3 +6,12 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+zone "bertran.local" {
+	type master;
+	file "/etc/bind/zonas/db.bertran.local";
+};
+
+zone "5.16.172.in-addr.arpa" {
+	type master;
+	file "/etc/bind/zonas/db.5.16.172.in-addr.arpa";
+};
