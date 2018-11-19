@@ -1,0 +1,15 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	40
+@	IN	SOA	bertran.local. root.bertran.local. (
+		     2018111901		; Serial
+			     40		; Refresh
+			     40		; Retry
+			2419200		; Expire
+			 	40 )	; Negative Cache TTL
+;
+@		IN	NS	ns1.bertran.local.
+ns1		IN	A	172.16.5.10
+dserver00	IN	A	172.16.5.10
+uclient01	IN	A	172.16.5.20
