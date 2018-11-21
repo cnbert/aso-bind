@@ -3,11 +3,11 @@
 ;
 $TTL	40
 @	IN	SOA	bertran.local. root.bertran.local. (
-		     2018111901		; Serial
+		     2018112101		; Serial
 			     40		; Refresh
 			     40		; Retry
 			2419200		; Expire
-			 	40 )	; Negative Cache TTL
+			    40 )	; Negative Cache TTL
 ;
 @	IN	NS	ns1.bertran.local.
 10		PTR	ns1.bertran.local.
