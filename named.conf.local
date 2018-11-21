@@ -6,12 +6,16 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+include "/etc/bind/ddns.key";
+
 zone "bertran.local" {
 	type master;
 	file "/etc/bind/zonas/db.bertran.local";
+	allow-update {key UPDATE_KEY;};
 };
 
 zone "5.16.172.in-addr.arpa" {
 	type master;
 	file "/etc/bind/zonas/db.5.16.172.in-addr.arpa";
+	allow-update {key UPDATE_KEY;};
 };
